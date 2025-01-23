@@ -1,0 +1,128 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Header Container */
+.header {
+  position: relative; /* Enables positioning for child elements */
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+/* Header Image */
+.header-image {
+  width: 100%; /* Ensures the image spans the full width of the screen */
+  display: block;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  position: absolute;
+  top: 28.7%; /* Adjust to place the buttons vertically */
+  left: 25%; /* Adjust to place the buttons horizontally */
+}
+
+.nav-button:nth-child(2) {
+  margin-left:28.4px;
+}
+
+.nav-button:nth-child(3) {
+  margin-left:28px;
+}
+
+.nav-button:nth-child(4) {
+  margin-left:26.5px;
+}
+
+.nav-button {
+  font-family: 'Poppins', sans-serif; /* Matches the website font */
+  font-size: 14px;
+  color: #282626; /* Matches text color */
+  text-decoration: none;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 1); /* Slight background for visibility */
+  border-radius: 4px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+  color: #006666; /* Highlight color on hover */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.text-teal {
+  color: #008080;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  display: block;
+}
+
+.nav-buttons {
+  position: absolute;
+  top: 28%;
+  left: 25%;
+}
+
+.nav-button {
+  font-size: 14px;
+  color: #282626;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #008080;
+  color: #fff;
+}
+
+.stats-section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+}
+
+.logos-section img {
+  max-height: 80px;
+  margin: 10px;
+}

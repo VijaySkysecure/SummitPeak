@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+nav .nav-link {
+    color: grey;
+    font-weight: 500;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav .nav-link:hover {
+    color: teal;
+    text-shadow: 0 0 5px teal;
+}
+
+.contact-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: teal;
+}
+
+.contact-section .badge {
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-section .badge:hover {
+    transform: scale(1.1);
+    background-color: #e0f7fa;
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, teal, blue);
+    color: white;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(to right, blue, teal);
+}
+
+.map-section h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: teal;
+}
