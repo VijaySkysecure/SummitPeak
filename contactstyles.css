@@ -6,16 +6,16 @@ body {
     border-bottom: 1px solid #e0e0e0;
   }
    
-  nav .nav-link {
-    color: #666; /* Use a more specific gray color */
-    font-weight: 500;
-    margin-right: 15px;
-    transition: color 0.3s ease-in-out;
+  .nav-link {
+    color: rgb(98, 97, 97);
   }
-   
-  nav .nav-link:hover {
+  
+  .nav-link:hover {
+    color: #00695c;
+  }
+
+  .nav-link.active {
     color: teal;
-    text-shadow: 0 0 5px teal;
   }
 
   .social-icons {

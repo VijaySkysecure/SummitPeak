@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .nav-link {
+    color: rgb(98, 97, 97);
+  }
+  
+  .nav-link:hover {
+    color: #00695c;
+  }
+  
+  .nav-link.active {
+    color: teal;
+  }
+  
+  .social-icons {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Align icons vertically */
+    gap: 20px; /* Adds space between each icon */
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem; /* Increase icon size */
+  }
+
+
+.our-services {
+    text-align: left;
+    margin-left: 120px;
+    margin-top: 60px;
+    
+}
+  
+.our-services h2 {
+    font-size: 2rem;
+    margin-top: 20px;;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: teal;
+}
+  
+.our-services p {
+    font-size: 1rem;
+    margin-top:10px;
+    color: #333;
+    margin-bottom: 40px;
+}
+  
+.centered-tab-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the content horizontally */
+    gap: 30px; /* Spacing between buttons */
+    padding: 10px 20px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    width: fit-content; /* Make the container width fit the content */
+}
+  
+.tab-button {
+    background: none;
+    border: none;
+    color: gray;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    color: #333;
+}
+  
+.tab-button.active {
+    color: white;
+    color: #009688;
+    border-radius: 20px;
+}
+
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative; /* For smooth animations */
+}
+
+.service-image-wrapper {
+    position: relative; /* Ensures individual control for animations */
+    transform: translateY(0); /* Default position */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth animation */
+    opacity: 1; /* Fully visible by default */
+    
+}
+
+.service-image-wrapper img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Transition Effect: Images moving down */
+.service-image-wrapper.moving {
+    transform: translateY(100%); /* Move down during the animation */
+    opacity: 0; /* Fade out effect */
+}
+
+/* First child remains fully visible */
+.service-image-wrapper:first-child {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Wrapper for the entire section */
+.contact-section {
+    background-color: black; /* Black background */
+    padding: 40px 0; /* 40px padding on top and bottom */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  }
+  
+  /* Inner content container */
+.content {
+    text-align: center;
+    color: white; /* Default text color */
+}
+  
+  /* Main text style */
+.main-text {
+    color: teal; /* Teal color */
+    font-size: 2.5rem; /* 2rem font size */
+    font-weight: bold;
+    margin-bottom: 10px; /* Spacing between the elements */
+}
+  
+  /* Sub-text style */
+.sub-text {
+    font-size: 0.9rem; /* 0.9rem font size */
+    margin-bottom: 30px; /* Spacing between the sub-text and button */
+}
+  
+  /* Button style */
+.contact-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centers the button */
+    padding: 10px 30px;
+    background: linear-gradient(to right, teal, blue);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+    
+.contact-btn:hover {
+    background: linear-gradient(to right, blue, teal);
+}
+
+.centered-tab-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the content horizontally */
+    gap: 30px; /* Spacing between buttons */
+    padding: 10px 20px;
+    border: 2px solid #161414;
+    border-radius: 30px;
+    margin: 0 auto 30px; /* Center horizontally */
+    background-color: #f9f9f9;
+    width: fit-content; /* Make the container width fit the content */
+}
+  
+.tab-button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    color: #333;
+}
+  
+.tab-button.active {
+    color: white;
+    color: #009688;
+    border-radius: 20px;
+}
+  
+.tech-image {
+    display: none;
+    width: 80%;
+    margin: 0 auto 30px;
+    max-height: 300px;
+    object-fit: contain;
+}
+  
+.tech-image.active {
+    display: block;
+}
+
+
