@@ -1,8 +1,13 @@
-body {
-  font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+
 
 header {
   display: flex;
@@ -27,11 +32,14 @@ header {
 }
 
 .nav-link:hover {
-  color: #00695c;
+  color: rgb(98, 97, 97);
 }
 
 .nav-link.active {
-  color: teal;
+  background-image: linear-gradient(0deg, rgba(13, 148, 136, 1), rgba(22, 5, 111, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .social-icons {
@@ -48,41 +56,62 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 40px;
+  padding: 40px 40px;
 }
 
 .about-content {
   flex: 1;
-  margin-left: 90px;
+  margin-left: 60px;
 }
 
 .about-content h1 {
   font-size: 2rem; 
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 52.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
 }
 
 .highlight-text {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: teal;
-  margin: 20px 0;
+  font-family: 'Poppins', sans-serif; /* Added font-family */
+  font-size: 60px; /* Updated font size */
+  font-weight: 700; /* Font weight */
+  line-height: 75px; /* Line height */
+  text-align: left; /* Text alignment */
+  background-image: linear-gradient(135deg, rgba(13, 148, 136, 1), rgba(22, 5, 111, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 30px 0;
 }
 
 .about-content p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(18, 18, 18, 1);
+
 }
 
 .about-image {
   flex: 1;
-  text-align: right;
-  margin-left: 30px; /* Add spacing to move the image further right */
+  margin-bottom: 20px; /* Retain the bottom margin as per your requirement */
 }
 
 .about-image img {
-  width: 90%; /* Adjust if needed to control the size */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 130%; /* Adjust the width to 100% to fill the container */
+  max-width: 740px; /* Optional: limit the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px;
+  display: block; /* Removes any extra space below the image */
 }
 
 .stats-section {
@@ -99,20 +128,33 @@ header {
 }
 
 .stat-number {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: teal;
+  font-family: 'Poppins', sans-serif; /* Added font-family */
+  font-size: 75px; /* Updated font size */
+  font-weight: 700; /* Font weight */
+  line-height: 70px; /* Line height */
+  text-align: center; /* Text alignment */
+  background-image: linear-gradient(135deg, rgba(13, 148, 136, 1), rgba(22, 5, 111, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 20px 0;
 }
 
 .stat-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: teal;
-  margin: 10px 0;
+  font-family: 'Poppins', sans-serif; /* Added font-family */
+  font-size: 40px; /* Updated font size */
+  font-weight: 500; /* Font weight */
+  line-height: 50px; /* Line height */
+  text-align: center; /* Text alignment */
+  background-image: linear-gradient(135deg, rgba(13, 148, 136, 1), rgba(22, 5, 111, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 20px 0;
 }
 
 .stat-description {
-  font-size: 1rem;
+  font-size: 15px;
   color: #aaa;
 }
 
@@ -123,26 +165,30 @@ header {
 }
 
 .ourteam h1 {
-  font-size: 2rem;
+  font-size: 32px; /* Updated font size */
+  font-weight: 300; /* Font weight */
   color: #000; /* Black title */
-  margin-bottom: 10px;
   text-align: left; /* Align text to the left */
 }
 
 .ourteam h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: teal; /* Highlight text color */
-  margin: 20px 0;
+  font-size: 2rem;
+  background-image: linear-gradient(135deg, rgba(13, 148, 136, 1), rgba(22, 5, 111, 1));
+  margin: 10px 0;
   text-align: left; /* Align text to the left */
 }
 
 .ourteam p {
-  font-size: 1rem;
-  color: #666; /* Muted text */
-  line-height: 1.6;
-  width: 100%; /* Make it span the full width */
-  margin: 20px 0; /* Add vertical spacing */
+  color: black; /* Black title */
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 80%; /* Make it span the full width */
+  margin: 10px 0; /* Add vertical spacing */
 }
 
 
@@ -170,11 +216,12 @@ header {
 
 /* Show More Button */
 .show-more {
-  background: linear-gradient(to right, #007bff, #4e8ef7);
-  border: none;
+  background-image: linear-gradient(135deg, rgba(13, 148, 136, 1), rgba(22, 5, 111, 1));
   color: white;
+  border: none;
   padding: 10px 30px;
-  font-size: 1rem;
+  font-weight: 550; /* Font weight */
+  font-size: 18px;
   border-radius: 5px;
   margin-top: 40px; /* Added margin to create more gap from the team grid */
   transition: background 0.3s;
@@ -182,10 +229,3 @@ header {
   margin-left: auto; 
   margin-right: auto;
 }
-
-.show-more:hover {
-  background: linear-gradient(to right, #0056b3, #3a77d1);
-}
-
-
-
